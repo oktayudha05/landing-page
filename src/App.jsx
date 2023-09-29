@@ -8,12 +8,10 @@ const App = () =>  {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Navbar/>}/>
         <Route path="/login" element={<Login/>}/>
-      
       </Routes>
     </Router>
-
-    
   )
 }
 
