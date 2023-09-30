@@ -1,9 +1,17 @@
 import Signup from "./createAccount.jsx"
-import {Routes, Route, useNavigate} from 'react-router-dom'
+import { useNavigate, BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function Login() {
 
 
+    // <Router>
+    //   <Routes>
+    //     <Route path="/signup" element={<Signup/>}/>
+    //   </Routes>
+    // </Router>
+    // const navigate = useNavigate()
+
+    
 
     return (
         <section class="bg-gray-50 dark:bg-gray-900">
@@ -39,7 +47,7 @@ function Login() {
                   </div>
                   <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in</button>
                   <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Don’t have an account yet? <a onClick={() => navigate('/login')} class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
+                      Don’t have an account yet? <a href="" onClick={() => navigate('/signup')} class="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</a>
                   </p>
               </form>
               
@@ -48,7 +56,11 @@ function Login() {
   </div>
 </section>
 
+
+
     )
+
+    
 }
 
 
