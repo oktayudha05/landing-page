@@ -3,15 +3,7 @@ import { useNavigate} from "react-router-dom"
 
 function Login() {
 
-
-    // <Router>
-    //   <Routes>
-    //     <Route path="/signup" element={<Signup/>}/>
-    //   </Routes>
-    // </Router>
     const navigate = useNavigate()
-
-
 
     return (
         <section className="bg-gray-50 dark:bg-white-500">
