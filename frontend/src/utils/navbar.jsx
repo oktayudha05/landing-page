@@ -7,9 +7,9 @@ function Navbar() {
 
 <nav className="bg-gradient-to-r from-slate-900 via-cyan-900 to-sky-800">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-  <a href="index.html" className="flex items-center">
+  <a href="" className="flex items-center">
       <img src="/img/Logo FAV.jpg" className="h-8 mr-3" alt="fav Logo" />
-      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">URFAV Company</span>
+      <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Teknologi Informasi</span>
   </a>
   <div className="flex md:order-1">
   </div>
