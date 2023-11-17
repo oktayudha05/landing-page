@@ -39,7 +39,16 @@ const deleteUser = async (req, res) => {
     } catch (error) {
         res.status(500).json({message: error.message});
     }
-    
 }
 
-export { getUsers, postUsers, deleteUser }
+const updateUser = async (req, res) => {
+    try {
+        const userName = req.params.name;
+        const afterUpdate = req.query.nameUpdate;
+        const updatedUser = await user.findOneAndUpdate({name: userName}, {name: afterUpdate});
+        res.status(200).json(updatedUser);
+    } catch (error) {
+        res.status(500).json({message: error.message});
+    }
+}
+export { getUsers, postUsers, deleteUser, updateUser }
