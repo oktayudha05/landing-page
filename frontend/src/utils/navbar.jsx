@@ -6,7 +6,7 @@ function Navbar() {
       <div className="w-full container mx-auto">
         <div className="w-full flex items-center justify-between">
         
-          <a className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+          <a className="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
           <img src="/img/LOGOTI.png" alt="" style={{height:50}} className="pr-5"/>
             TechforTwo
           </a>

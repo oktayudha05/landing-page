@@ -17,7 +17,7 @@ function Login() {
             </a>
         </div>
 </div>
-  <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+  <div className="w-full container mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
       <a href="/" className="flex items-center mb-6 text-2xl font-semibold text-white rounded outline outline-2 outline-offset-2 pr-2 pl-2">
       <img src="/img/LOGOTI.png" alt="" style={{height:50}} className="pr-2"/>Teknologi Informasi</a>
       <div className="w-full bg-transparent rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 ">
