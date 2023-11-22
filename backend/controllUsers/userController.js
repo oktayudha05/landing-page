@@ -1,5 +1,15 @@
 import user from "../models/userModel.js"
 
+//! halaman utama
+const halamanUtama = (req, res) => {
+    try {
+        const pesan = "Selamat datang di halaman utama";
+        res.status(200).json(pesan);
+    } catch (error) {
+        res.status(500).json({message: error.message});
+    }
+}
+
 //! lihat user
 const getUsers = async (req, res) => {
     try {
@@ -51,4 +61,4 @@ const updateUser = async (req, res) => {
         res.status(500).json({message: error.message});
     }
 }
-export { getUsers, loginUser, deleteUser, updateUser }
+export { getUsers, loginUser, deleteUser, updateUser, halamanUtama }
