@@ -11,18 +11,18 @@ const getUsers = async (req, res) => {
 }
 
 //! tambah user
-const postUsers = async (req, res) => {
+const loginUser = async (req, res) => {
     try {
-        const userName = req.query.name;
-        const password = req.query.password;
-        const email = req.query.email;
+        const userName = req.body.username;
+        const password = req.body.password;
+        const email = req.body.email;
         
         const newUser = new user({
             email: email,
             name: userName,
             password: password,
         })
-        console.log(req.query.name);
+        console.log(req.body.username);
         const users = await newUser.save();
         res.status(200).json(users);
     } catch (error) {
@@ -51,4 +51,4 @@ const updateUser = async (req, res) => {
         res.status(500).json({message: error.message});
     }
 }
-export { getUsers, postUsers, deleteUser, updateUser }
+export { getUsers, loginUser, deleteUser, updateUser }
