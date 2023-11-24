@@ -6,8 +6,7 @@ function Login() {
     const navigate = useNavigate()
 
     return (
-        <section className="bg-gray-50 dark:bg-transparent">
-
+<section className="bg-gray-50 dark:bg-transparent">
 <div className="w-full container mx-auto">
         <div className="w-full flex items-center justify-between">
         <a 
@@ -25,14 +24,14 @@ function Login() {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-white md:text-2xl ">
                   Sign in to your account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
+              <form className="space-y-4 md:space-y-6" action="#" method="post">
                   <div>
-                      <label htmlFor="email" className="block mb-2 text-sm font-medium text-white">Email</label>
-                      <input type="email" name="email" id="email" className="bg-blue-300 border text-black sm:text-sm rounded-lg focus:ring-black focus:border-black placeholder-black block w-full p-2.5" placeholder="email@gmail.com" required=""/>
+                      <label htmlFor="username" className="block mb-2 text-sm font-medium text-white">Username</label>
+                      <input type="text" name="username" id="" className="bg-blue-300 border text-black sm:text-sm rounded-lg focus:ring-black focus:border-black placeholder-black block w-full p-2.5" placeholder="Your Username" required=""/>
                   </div>
                   <div>
                       <label htmlFor="password" className="block mb-2 text-sm font-medium text-white">Password</label>
-                      <input type="password" name="password" id="password" placeholder="Your Password" className="bg-blue-300 border text-black sm:text-sm rounded-lg focus:ring-black focus:border-black placeholder-black block w-full p-2.5" required=""/>
+                      <input type="password" name="password" id="" placeholder="Your Password" className="bg-blue-300 border text-black sm:text-sm rounded-lg focus:ring-black focus:border-black placeholder-black block w-full p-2.5" required=""/>
                   </div>
                   <div className="flex items-center justify-between">
                       <div className="flex items-start">
@@ -55,9 +54,6 @@ function Login() {
       </div>
   </div>
 </section>
-
-
-
     )
 
     
